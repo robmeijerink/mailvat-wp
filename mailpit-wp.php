@@ -10,9 +10,9 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-defined('ABSPATH') || exit;
-
 namespace MailpitWp;
+
+defined('ABSPATH') || exit;
 
 class MailpitWP
 {
