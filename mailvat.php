@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Mailpit WP
- * Description: Mailpit plugin for routing email in local development
- * Plugin URI: https://github.com/robmeijerink/mailpit-wp
+ * Plugin Name: Mailvat
+ * Description: Mailvat integrates Mailpit for routing email in local development
+ * Plugin URI: https://github.com/robmeijerink/mailvat-wp
  * Author: Rob Meijerink
  * Author URI: https://robmeijerink.nl
  * Version: 1.0.0
@@ -10,11 +10,11 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-namespace MailpitWp;
+namespace MailvatWp;
 
 defined('ABSPATH') || exit;
 
-class MailpitWP
+class Mailvat
 {
     private string $host;
 
@@ -39,7 +39,7 @@ class MailpitWP
     }
 }
 
-new MailpitWP(
+new Mailvat(
     defined('MAILPIT_HOST') ? MAILPIT_HOST : 'mailpit',
     defined('MAILPIT_PORT') ? (int) MAILPIT_PORT : 1025,
 );
