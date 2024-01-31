@@ -5,8 +5,7 @@
  * Plugin URI: https://github.com/robmeijerink/mailvat-wp
  * Author: Rob Meijerink
  * Author URI: https://robmeijerink.nl
- * Version: 1.0.1
- * Tested up to: 6.4.3
+ * Version: 1.0.3
  * License: GPL2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
