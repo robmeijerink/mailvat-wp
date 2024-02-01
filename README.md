@@ -45,10 +45,13 @@ Define the Mailpit SMTP configuration values and activate this plugin.
 
 If you do not define the `MAILVAT_HOST` and `MAILVAT_PORT` constants yourself, these will be used by default:
 
-```
+<pre>
+<code>
+# Defined Constants
 MAILVAT_HOST=mailpit
 MAILVAT_PORT=1025
-```
+</code>
+</pre>
 
 ### Is this an official plugin from Mailpit or MailHog?
 
