@@ -4,7 +4,7 @@ Contributors: robm89
 Tags: mailvat, mailpit, mailhog, smtp, wp mail smtp, wordpress smtp, mail, mailer, phpmailer, wp_mail, email, wp smtp, dev mail, local mail, test mail  
 Requires at least: 4.7  
 Tested up to: 6.4.3  
-Stable tag: 1.0.6  
+Stable tag: 1.0.7  
 Requires PHP: 7.0  
 License: GPLv2 or later  
 License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)  
@@ -45,13 +45,8 @@ Define the Mailpit SMTP configuration values and activate this plugin.
 
 If you do not define the `MAILVAT_HOST` and `MAILVAT_PORT` constants yourself, these will be used by default:
 
-<pre>
-<code>
-# Defined Constants
 MAILVAT_HOST=mailpit
 MAILVAT_PORT=1025
-</code>
-</pre>
 
 ### Is this an official plugin from Mailpit or MailHog?
 
