@@ -1,13 +1,13 @@
 # Mailvat
 
-Contributors: robm89  
-Tags: mailvat, mailpit, mailhog, smtp, wp mail smtp, wordpress smtp, mail, mailer, phpmailer, wp_mail, email, wp smtp, dev mail, local mail, test mail  
-Requires at least: 4.7  
-Tested up to: 6.4.3  
-Stable tag: 1.0.7  
-Requires PHP: 7.0  
-License: GPLv2 or later  
-License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)  
+Contributors: robm89
+Tags: mailvat, mailpit, mailhog, smtp, wp mail smtp, wordpress smtp, mail, mailer, phpmailer, wp_mail, email, wp smtp, dev mail, local mail, test mail
+Requires at least: 4.7
+Tested up to: 6.5
+Stable tag: 1.0.8
+Requires PHP: 7.0
+License: GPLv2 or later
+License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
 
 Mailvat is a simple plugin that catches outgoing mail while working in your development environment.
 
