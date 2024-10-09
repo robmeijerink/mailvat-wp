@@ -5,7 +5,7 @@
  * Plugin URI: https://github.com/robmeijerink/mailvat-wp
  * Author: Rob Meijerink
  * Author URI: https://robmeijerink.nl
- * Version: 1.0.8
+ * Version: 1.0.9
  * License: GPL2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -35,7 +35,7 @@ class Mailvat
             $phpmailer->Port = $this->port;
             $phpmailer->SMTPAuth = false;
             $phpmailer->isSMTP();
-        });
+        }, PHP_INT_MAX);
     }
 }
 
