@@ -3,9 +3,9 @@
 Contributors: robm89
 Tags: test mail, local dev mail, mailpit, mailhog, smtp
 Requires at least: 4.7
-Tested up to: 6.8
-Stable tag: 1.0.11
-Requires PHP: 7.0
+Tested up to: 6.9.4
+Stable tag: 1.0.12
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
 
