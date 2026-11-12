@@ -40,6 +40,7 @@ class Mailvat
      */
     private function initHooks()
     {
+        // Highest priority so these settings override other plugins' SMTP config.
         add_action('phpmailer_init', array($this, 'configurePhpMailer'), PHP_INT_MAX);
     }
 
@@ -60,7 +61,7 @@ class Mailvat
 }
 
 /**
- * Initialize the plugin after all other plugins are loaded to ensure constants are available.
+ * Initialize the plugin once all other plugins are loaded.
  */
 add_action('plugins_loaded', function () {
     $host = defined('MAILVAT_HOST') ? MAILVAT_HOST : 'mailpit';
