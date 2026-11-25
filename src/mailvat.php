@@ -5,12 +5,12 @@
  * Plugin URI: https://github.com/robmeijerink/mailvat-wp
  * Author: Rob Meijerink
  * Author URI: https://robmeijerink.nl
- * Version: 1.0.14
+ * Version: 1.0.15
  * License: GPL2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Requires at least: 5.0
  * Requires PHP: 5.6
- * Tested up to: 7.1
+ * Tested up to: 7.2
  */
 
 namespace MailvatWp;
