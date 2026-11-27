@@ -4,13 +4,12 @@ on:
   push:
     tags:
     - "v*"
-  pull_request:
-    tags:
-    - "v*"
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@master
 
@@ -26,3 +25,26 @@ jobs:
           ASSETS_DIR: assets/
           SOURCE_DIR: src/
           SLUG: mailvat
+
+      - name: Create GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+
+          # Take the lines under "### <version>" up to the next heading.
+          awk -v heading="### ${VERSION}" '
+            $0 == heading { found = 1; next }
+            found && /^##/ { exit }
+            found { print }
+          ' src/README.md > release-notes.md
+
+          if ! grep -q '[^[:space:]]' release-notes.md; then
+            echo "::error::No changelog entry found for ${VERSION} in README.md"
+            exit 1
+          fi
+
+          gh release create "$GITHUB_REF_NAME" \
+            --title "$GITHUB_REF_NAME" \
+            --notes-file release-notes.md

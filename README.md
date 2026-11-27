@@ -2,24 +2,22 @@
 
 Contributors: robm89
 Tags: test mail, local dev mail, mailpit, mailhog, smtp
-Requires at least: 4.7
+Requires at least: 5.0
 Tested up to: 7.2
-Stable tag: 1.0.15
+Stable tag: 1.0.16
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
 
 Mailvat is a simple plugin that catches outgoing mail while working in your development environment.
 
-This plugin supports Mailpit and MailHog, but this is NOT an official plugin from any of those. This is just a simple plugin that helps you route outgoing emails to a development SMTP service.
+It routes all outgoing emails to a development SMTP service, like Mailpit or MailHog.
 
 ## Description
 
 Mailvat routes all your outgoing emails to your SMTP service for easy local development.
 
 My recommendation is to use [Mailpit](https://github.com/axllent/mailpit) in your development environment with this plugin.
-
-This is an UNOFFICIAL plugin that just integrates Mailpit or MailHog in WordPress.
 
 ## Installation
 
@@ -35,7 +33,7 @@ Mailvat is a simple plugin that integrates your SMTP testing tool, like Mailpit 
 
 ### What is Mailpit?
 
-[Mailpit](https://github.com/axllent/mailpit) is a nice email testing tool for developers. All outgoing emails from your website end up in the inbox in Mailpit, instead of being sent to the original recipients. This helps us testing our emails.
+[Mailpit](https://github.com/axllent/mailpit) is a nice email testing tool for developers. All outgoing emails from your website end up in the inbox in Mailpit, instead of being sent to the original recipients. This helps you test your emails.
 
 ### How can I use this plugin?
 
@@ -86,8 +84,16 @@ If you use [Bedrock](https://roots.io/bedrock/), define them in `config/environm
 
 This is NOT an official plugin from the creators of Mailpit or MailHog. I am not related to anyone in the Mailpit or the MailHog team.
 
-This is just a simple plugin to easily use an SMTP service, like Mailpit or MailHog, with WordPress. I made this plugin because I could not find it yet and it speeds up our local development if we can easily install this integration in WordPress.
+This is just a simple plugin to easily use an SMTP service, like Mailpit or MailHog, with WordPress. I made this plugin because I could not find one, and being able to easily install this integration in WordPress speeds up local development.
 
-## Upgrade Notice
+## Changelog
 
-Nothing here yet!
+### 1.0.16
+* Docs: Added FAQ about which host and port to use and where to define the constants
+
+### 1.0.15
+* Tested up to WordPress 7.2
+* New plugin icon
+
+### 1.0.0 – 1.0.14
+* Initial release and WordPress compatibility updates
