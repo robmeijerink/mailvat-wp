@@ -11,14 +11,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v7
 
       - name: Move files before publishing
         run: |
           mv README.md src/
 
       - name: WordPress Plugin Deploy
-        uses: nk-o/action-wordpress-plugin-deploy@master
+        uses: nk-o/action-wordpress-plugin-deploy@99c3fd60a0d5346875049f7da4c107f8bb5a4e1f # master, 2021-10-03
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
@@ -27,7 +27,6 @@ jobs:
           SLUG: mailvat
 
       - name: Create GitHub release
-        if: startsWith(github.ref, 'refs/tags/')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
